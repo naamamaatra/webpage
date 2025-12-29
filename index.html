@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Max Verstappen Racing Blog - Latest updates, race analysis, and fan engagement">
+    <title>VERSTAPPEN Racing | Official Blog</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; color: white; background: #061D42; }
+        
+        /* Header */
+        header { background: black; border-bottom: 4px solid gold; padding: 30px; text-align: center; }
+        header h1 { color: gold; font-size: 40px; letter-spacing: 3px; transition: 0.3s; cursor: pointer; }
+        header h1:hover { color: white; text-shadow: 0 0 20px rgba(255, 215, 0, 0.6); }
+        header p { color: lightgray; margin-top: 5px; }
+        
+        /* Navigation */
+        nav { background: #0A2A5E; padding: 15px; text-align: center; }
+        nav a { color: gold; text-decoration: none; margin: 0 20px; padding: 10px 20px; transition: 0.3s; }
+        nav a:hover { background: rgba(255, 215, 0, 0.2); }
+        
+        /* Section */
+        section { background: rgba(255,255,255,0.1); padding: 40px; margin: 30px; }
+        section h2 { color: gold; font-size: 30px; border-bottom: 3px solid red; padding-bottom: 10px; margin-bottom: 20px; }
+        
+        .stats-grid { display: flex; gap: 20px; margin: 30px 0; }
+        .stat-box { background: black; padding: 20px; text-align: center; flex: 1; transition: 0.3s; cursor: pointer; }
+        .stat-box:hover { background: rgba(255, 215, 0, 0.15); transform: translateY(-5px); }
+        .stat-number { font-size: 36px; color: lime; font-weight: bold; }
+        .stat-label { color: gold; margin-top: 5px; }
+        
+        /* Article */
+        article { background: rgba(255,0,0,0.1); padding: 30px; margin: 20px 0; border-left: 5px solid red; }
+        article h3 { color: gold; font-size: 24px; margin-bottom: 10px; }
+        article p { color: lightgray; margin: 10px 0; }
+        
+        /* Form Section */
+        .form-container { background: rgba(0,0,0,0.5); padding: 30px; margin: 30px 0; border: 2px solid gold; }
+        .form-container h3 { color: gold; margin-bottom: 20px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; color: gold; margin-bottom: 5px; }
+        .form-group input, .form-group textarea, .form-group select { 
+            width: 100%; 
+            padding: 12px; 
+            background: rgba(255,255,255,0.1); 
+            border: 1px solid #555; 
+            color: white; 
+            font-size: 14px; 
+        }
+        .form-group select option { 
+            background: #1a1a1a; 
+            color: white; 
+            padding: 10px; 
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { 
+            outline: none; 
+            border-color: gold; 
+            background: rgba(255, 215, 0, 0.1); 
+        }
+        button { 
+            background: gold; 
+            color: black; 
+            padding: 12px 30px; 
+            border: none; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: 0.3s; 
+        }
+        button:hover { background: white; }
+        
+        /* Aside */
+        aside { background: black; padding: 30px; margin: 30px; border: 2px solid gold; }
+        aside h3 { color: gold; font-size: 22px; margin-bottom: 15px; }
+        .race-item { background: rgba(255,255,255,0.1); padding: 15px; margin: 10px 0; transition: 0.3s; cursor: pointer; }
+        .race-item:hover { background: rgba(255, 215, 0, 0.1); transform: translateX(10px); }
+        .race-item strong { color: red; }
+        
+        /* Footer */
+        footer { background: black; text-align: center; padding: 30px; border-top: 4px solid gold; margin-top: 40px; }
+        footer p { color: gray; margin: 5px 0; }
+        footer a { color: gold; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>ORACLE RED BULL RACING</h1>
+        <p>Max Verstappen #1 | Official Racing Blog</p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#stats">STATISTICS</a>
+        <a href="#news">NEWS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <!-- SECTION: Main Stats -->
+    <section id="stats">
+        <h2>2025 Season Performance</h2>
+        <p>Max Verstappen continues his dominant run in Formula 1 with the RB21, showcasing exceptional skill and consistency across all circuits.</p>
+        
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Championships</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">62</div>
+                <div class="stat-label">Race Wins</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">40</div>
+                <div class="stat-label">Pole Positions</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">111</div>
+                <div class="stat-label">Podiums</div>
+            </div>
+        </div>
+
+        <!-- ARTICLE 1 -->
+        <article id="news">
+            <h3>Abu Dhabi Grand Prix Victory</h3>
+            <p>Max Verstappen secured a commanding victory at the Yas Marina Circuit, demonstrating perfect tire management and race strategy. The RB21 proved its superiority with exceptional straight-line speed and cornering stability.</p>
+            <p><strong>Race Stats:</strong> Fastest Lap: 1:23.456 | Top Speed: 342.8 km/h | Position: P1</p>
+        </article>
+
+        <!-- ARTICLE 2 -->
+        <article>
+            <h3>Championship Dominance Continues</h3>
+            <p>With the 2025 season in full swing, Verstappen has extended his championship lead with consistent performances. The Honda RBPT power unit delivers unmatched reliability and power output.</p>
+            <p><strong>Season Highlights:</strong> 15 Podiums | 12 Wins | 98% Finishing Rate</p>
+        </article>
+    </section>
+
+    <!-- SECTION: Contact Form -->
+    <section id="contact">
+        <h2>Fan Engagement Hub</h2>
+        <p>Connect with the Oracle Red Bull Racing team! Share your thoughts, questions, or race predictions.</p>
+        
+        <div class="form-container">
+            <h3>Send Us a Message</h3>
+            <form onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="topic">Topic</label>
+                    <select id="topic" name="topic">
+                        <option value="">Select a topic</option>
+                        <option value="race">Race Analysis</option>
+                        <option value="team">Team Updates</option>
+                        <option value="fan">Fan Questions</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+                </div>
+                
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ASIDE: Recent Races -->
+    <aside>
+        <h3>Recent Race Results</h3>
+        <div class="race-item">
+            <strong>Abu Dhabi GP:</strong> P1 - Dominant victory with fastest lap
+        </div>
+        <div class="race-item">
+            <strong>Qatar GP:</strong> P1 - Perfect execution from pole position
+        </div>
+        <div class="race-item">
+            <strong>Las Vegas GP:</strong> P2 - Strong recovery drive after qualifying issues
+        </div>
+        <div class="race-item">
+            <strong>Brazil GP:</strong> P1 - Masterclass in wet conditions
+        </div>
+        <div class="race-item">
+            <strong>Mexico GP:</strong> P1 - Championship lead extended
+        </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Oracle Red Bull Racing | All Rights Reserved</p>
+        <p>Powered by Honda RBPT | #MaxVerstappen #RB21</p>
+        <p>
+            <a href="#twitter">Twitter</a> | 
+            <a href="#instagram">Instagram</a> | 
+            <a href="#facebook">Facebook</a>
+        </p>
+    </footer>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const topic = document.getElementById('topic').value;
+            const message = document.getElementById('message').value;
+            
+            alert(`Thank you, ${name}! 🏁\n\nYour message has been received by the Oracle Red Bull Racing team.\n\nEmail: ${email}\nTopic: ${topic || 'General'}\n\nWe'll respond shortly!`);
+            
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
